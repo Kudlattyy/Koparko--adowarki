@@ -17,8 +17,9 @@
 		background-color: #ffc13d;
 		z-index: 10;
 		.nav-logo {
-			display: grid;
-			place-items: center;
+			display: flex;
+			justify-content: center;
+			width: 100vw;
 			height: 8vh;
 			.cat {
 				width: 10vw;
