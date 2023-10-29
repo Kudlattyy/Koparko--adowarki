@@ -126,8 +126,7 @@
 			height: 80vh;
 			width: 90vw;
 			background-color: #333333;
-			border-radius: 10px;
-			border: #ffc23d9d 2px solid;
+			border-radius: 10px;	
 			box-shadow: 3px 3px 3px 3px rgba(255, 194, 61, 0.3);
 			display: flex;
 			.slide--second-left {
@@ -154,5 +153,4 @@
 			}
 		}
 	}
-	
 </style>
