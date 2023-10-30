@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
+	import { T } from '@threlte/core';
 
 	let iloscGodzin: number = 0;
 	let odleglosc: number = 0;
@@ -45,6 +46,10 @@
 		} catch (error) {
 			console.error('Błąd sieci:', error);
 		}
+	}
+
+	function komunikat() {
+		alert('Dziękujemy za zakup, kwota do zapłaty została wysłana na E-maila');
 	}
 </script>
 
@@ -120,7 +125,7 @@
 				/>
 				<br />
 
-				<button class="btn btn-warning mt-20 btn-lg" type="submit"
+				<button on:click={komunikat} class="btn btn-warning mt-20 btn-lg" type="submit"
 					>Oblicz koszt i wyślij wycenę</button
 				>
 			</form>
